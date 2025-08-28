@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ছোট প্যানেল</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  .panel {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .small-button {
+    padding: 0; /* padding রিমুভ করে বাটনকে আরও ছোট করবে */
+    width: 40px; /* নির্দিষ্ট প্রস্থ */
+    height: 40px; /* নির্দিষ্ট উচ্চতা */
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .small-button:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+
+<div class="panel">
+  <a href="https://www.google.com" target="_blank" class="small-button">১</a>
+  <a href="https://www.facebook.com" target="_blank" class="small-button">২</a>
+  <a href="https://www.youtube.com" target="_blank" class="small-button">৩</a>
+  <a href="https://www.twitter.com" target="_blank" class="small-button">৪</a>
+</div>
+
+</body>
+</html>
