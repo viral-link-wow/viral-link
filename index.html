@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timed Button</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: #333;
+            box-sizing: border-box;
+            padding-top: 20px;
+        }
+        .ad-container {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .main-content {
+            background-color: #e6f7ff;
+            padding: 40px 20px;
+            border-radius: 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .ad-space {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .ad-space-bottom {
+            margin-top: 10px;
+        }
+        .header {
+            font-size: 2.0em; /* লেখা বড় করা হয়েছে */
+            font-weight: bold;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 90%;
+            display: block; /* ডিফল্ট ভাবে দেখানো হবে */
+        }
+        @media (max-width: 768px) {
+            .header {
+                font-size: 1.5em;
+                margin-bottom: 20px;
+            }
+        }
+        #timer {
+            font-size: 2.5em;
+            margin-bottom: 25px;
+            color: #333;
+            font-weight: bold;
+        }
+        #openButton {
+            padding: 18px 60px;
+            font-size: 1.8em;
+            font-weight: bold;
+            cursor: not-allowed;
+            background-color: #6c757d;
+            border: none;
+            border-radius: 8px;
+            color: #dee2e6;
+            transition: transform 0.2s; /* শুধু ট্রান্সফর্ম ট্রানজিশন রাখা হয়েছে */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            display: none; /* ডিফল্ট ভাবে লুকানো থাকবে */
+            align-items: center;
+            justify-content: center;
+            background-color: #28a745; /* পার্মানেন্ট সবুজ কালার */
+            color: white; /* পার্মানেন্ট সাদা টেক্সট */
+            cursor: pointer;
+        }
+        #openButton:hover {
+            background-color: #218838;
+            transform: translateY(-2px);
+        }
+        #openButton i {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <div class="header">
+            Complete the steps.
+        </div>
+        <div id="timer">10</div>
+        <button id="openButton">
+            <i class="fas fa-play-circle"></i> Next Step
+        </button>
+    </div>
+    <div class="ad-container">
+        <script async="async" data-cfasync="false" src="//pl27408554.profitableratecpm.com/45718544708b185acff6d14248cc94cd/invoke.js"></script>
+        <div id="container-45718544708b185acff6d14248cc94cd"></div>
+    </div>
+    
+    <script>
+        const timerElement = document.getElementById('timer');
+        const openButton = document.getElementById('openButton');
+        const headerElement = document.querySelector('.header');
+        let countdown = 10;
+        
+        function updateCountdown() {
+            countdown--;
+            timerElement.textContent = countdown;
+            if (countdown <= 0) {
+                clearInterval(timerInterval);
+                timerElement.textContent = 'Ready!';
+                openButton.style.display = 'flex'; // বাটনটি দেখানো হবে
+            }
+        }
+        
+        const timerInterval = setInterval(updateCountdown, 1000);
+        
+        openButton.addEventListener('click', function() {
+            // নতুন ট্যাবে লিঙ্কটি খোলা হবে
+            window.open("https://www.effectivecpmrate.com/v7udtj04e?key=ebdce65ede7af7e8d3b2fe281f04283a", '_blank');
+        });
+    </script>
+    
+    <script type='text/javascript' src='//pl27408564.profitableratecpm.com/6f/9e/55/6f9e557cf4f6d1ad34e52bf37ab2156a.js'></script>
+    <script type='text/javascript' src='//pl27444202.effectivecpmrate.com/f7/be/3d/f7be3da0a62cf03c9a315bdc6f0e403e.js'></script>
+</body>
+</html>
